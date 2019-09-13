@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CommentStmt } from '@angular/compiler';
+import { comment } from '../shared/comment';
 
 
 const DISH = {
@@ -53,8 +55,8 @@ const DISH = {
 export class DishdetailComponent implements OnInit {
 
   dish = DISH;
-  // Mydish:Dish = DISHES[0];
-
+  
+ comments: comment = DISH[0];
   constructor() { }
 
   ngOnInit() {
